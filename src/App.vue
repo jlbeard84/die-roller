@@ -4,9 +4,11 @@
             <md-app-toolbar md-mode="fixed" class="md-primary">
                 <span class="md-title">Die Roller</span>
             </md-app-toolbar>
-
+            
             <md-app-content>
-                <h1>{{ msg }}</h1>
+                <app-tabbed-router/>
+
+                <router-view/>
             </md-app-content>
         </md-app>
         
@@ -14,8 +16,13 @@
 </template>
 
 <script>
+import TabbedRouter from "./TabbedRouter.vue";
+
 export default {
     name: 'app',
+    components: {
+        'app-tabbed-router': TabbedRouter
+    },
     data () {
         return {
             msg: 'Welcome to die roller'
