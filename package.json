@@ -1,0 +1,36 @@
+{
+  "name": "die-roller",
+  "version": "1.0.0",
+  "description": "Simple Die Rolling App to Test Vue.js and Parcel",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jlbeard84/die-roller.git"
+  },
+  "scripts": {
+    "dev": "parcel index.html",
+    "watch": "parcel watch index.html",
+    "production": "parcel build index.html"
+  },
+  "author": "Josh Beard",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jlbeard84/die-roller/issues"
+  },
+  "alias": {
+    "vue": "./node_modules/vue/dist/vue.common.js"
+  },
+  "homepage": "https://github.com/jlbeard84/die-roller#readme",
+  "dependencies": {
+    "vue": "2.6.8",
+    "vue-hot-reload-api": "^2.3.3"
+  },
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^2.6.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "5.15.1",
+    "parcel-bundler": "1.12.1",
+    "sass": "^1.17.2",
+    "vue-template-compiler": "^2.6.8"
+  }
+}
